@@ -1,3 +1,4 @@
+
 const express = require('express');
 var app = express();
 var upload = require('express-fileupload');
@@ -12,7 +13,6 @@ var down_name
 
 app.use(upload());
 
- 
 app.get('/',function(req,res){
   res.sendFile(__dirname+'/index.html');
 })
@@ -22,7 +22,7 @@ app.post('/upload',function(req,res){
     var file = req.files.upfile,
       name = file.name,
       type = file.mimetype;
-    //File where .docx will be downloaded  
+    //File where .docx will be downloaded
     var uploadpath = __dirname + '/uploads/' + name;
     //Name of the file --ex test,example
     const First_name = name.split('.')[0];
@@ -79,7 +79,8 @@ app.get('/thankyou',(req,res) => {
     res.sendFile(__dirname+'/thankyou.html')
 })
 
-  
+
 app.listen(3000,() => {
     console.log("Server Started at port 3000...");
 })
+
