@@ -31,10 +31,13 @@
 
       <div class="logo">
         <h1><a href="index.html">MNCVN</a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
       </div>
 
     </div>
   </header><!-- End Header -->
+
 
 <br><br><br>
   <footer id="footer">
@@ -43,26 +46,22 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-6">
+             
           <h1 class="text-center">
               DOCX to PDF Converter
           </h1>
           <br><br>
-          <form action="upload" method="post" enctype="multipart/form-data">
-            <div class="form-group">
-                <input type="file" name="file" id="" required class="form-control">
-            </div>
-            <br><br>
-            <div class="form-group">
-                <button class="btn btn-primary btn-block" position="absoulte" left="100px" top="150px">
-                    Convert to DOCX
-                </button>
-            </div>
-        </form>
+          <h2>Drop Your File Here</h2>
+          <form class="fileupload" action="upload" method="post" enctype="multipart/form-data">
+      <input type="file" name="upfile" value="">
+      <input type="submit"/>
       </div>
             </form>
+          
         </div>
       </div>
     </div>
+ <br><br>
 
 
     <div class="footer-top">
@@ -90,6 +89,10 @@
         &copy; Copyright <strong><span>MNCVN</span></strong>. All Rights Reserved
       </div>
       <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/free-bootstrap-app-landing-page-template/ -->
       </div>
     </div>
   </footer><!-- End Footer -->
