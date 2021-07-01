@@ -24,11 +24,21 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 
 <!-- Header -->
 <header class="w3-container w3-blue w3-center" style="padding:128px 16px">
+  <br>
   <div class="footer-newsletter">
       <div class="container">
         <div class="row justify-content-center">
-          <br><br>
-           <h1>Thanks for using our service!</h1>
+           <h1>click the button below to download the file</h1>
+           <br><br>
+        <button id = "btn_download " class="btn btn-success">Download</button>
+        <script type="text/javascript">
+        $("#btn_download").click(function(){
+            window.open('/download');
+            window.open('/thankyou');
+        })
+        </script>
+            </form>
+          
         </div>
       </div>
     </div>
